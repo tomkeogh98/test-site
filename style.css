@@ -54,3 +54,13 @@ nav { margin-top: 32px; }
 @media (prefers-reduced-motion: reduce) {
   .dog.jumping { animation: dog-nudge 0.3s ease-in-out; }
 }
+.shot { margin: 40px 0; }
+.shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow:
+    0 0 12px rgba(197, 143, 224, 0.35),
+    0 0 48px rgba(197, 143, 224, 0.25);
+}
