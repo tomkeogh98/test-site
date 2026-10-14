@@ -27,3 +27,12 @@ h1 { margin: 0 0 16px; font-size: 2rem; }
 a { color: var(--accent); }
 code { background: var(--code-bg); padding: 1px 6px; border-radius: 4px; }
 nav { margin-top: 32px; }
+.dog {
+  font: 20px/1.2 ui-monospace, SFMono-Regular, Menlo, monospace;
+  background: var(--code-bg);
+  padding: 16px 20px;
+  border-radius: 8px;
+  overflow-x: auto;
+  width: fit-content;
+  max-width: 100%;
+}
