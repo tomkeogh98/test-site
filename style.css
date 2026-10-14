@@ -35,4 +35,22 @@ nav { margin-top: 32px; }
   overflow-x: auto;
   width: fit-content;
   max-width: 100%;
+  margin-top: 48px;
+  cursor: pointer;
+  transform-origin: 50% 100%;
+}
+.dog:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+.dog.jumping { animation: dog-jump 0.6s; }
+@keyframes dog-jump {
+  0%   { transform: translateY(0) scale(1, 1); animation-timing-function: ease-out; }
+  15%  { transform: translateY(0) scale(1.08, 0.9); animation-timing-function: ease-out; }
+  50%  { transform: translateY(-40px) scale(0.95, 1.06); animation-timing-function: ease-in; }
+  85%  { transform: translateY(0) scale(1.08, 0.9); animation-timing-function: ease-out; }
+  100% { transform: translateY(0) scale(1, 1); }
+}
+@keyframes dog-nudge {
+  50% { transform: translateY(-4px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .dog.jumping { animation: dog-nudge 0.3s ease-in-out; }
 }
